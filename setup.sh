@@ -16,7 +16,7 @@ JAVA_VERSION=$(java -version 2>&1 | awk -F '"' '/version/ {print $2}' | cut -d. 
 
 info "All requirements met."
 
-$REPO_URL="https://github.com/capitanfight/Danes.git"
+REPO_URL="https://github.com/capitanfight/Danes.git"
 DANES_DIR="$HOME/.config/danes"
 RAID_DIR="$DANES_DIR/raids"
 BIN_DIR="$DANES_DIR/bin"
