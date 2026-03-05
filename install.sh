@@ -9,7 +9,7 @@ info "Checking requirements..."
 require git
 info "All requirements met."
 
-$REPO_URL=""
+$REPO_URL="https://github.com/capitanfight/Danes.git"
 $REPO_DIR="$HOME/.cache/danes"
 $EXEC_DANES="$HOME/.local/bin/danes"
 $SETUP="$REPO_DIR/setup.sh"
