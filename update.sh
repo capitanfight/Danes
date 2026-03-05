@@ -10,10 +10,10 @@ require git
 require javac
 info "All requirements met."
 
-$DANES_DIR="$HOME/.config/danes"
-$REPO_DIR="$DANES_DIR/repo"
-$SETUP="$REPO_DIR/setup.sh"
-$EXEC_DANES="$HOME/.local/bin/danes"
+DANES_DIR="$HOME/.config/danes"
+REPO_DIR="$DANES_DIR/repo"
+SETUP="$REPO_DIR/setup.sh"
+EXEC_DANES="$HOME/.local/bin/danes"
 
 info "Checking for updates in git repo..."
 if [[ ! -d "$REPO_DIR/.git" ]]; then
