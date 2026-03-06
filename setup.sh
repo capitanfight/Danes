@@ -35,16 +35,16 @@ for dir in $DANES_DIR $RAID_DIR $BIN_DIR $CONFIG_DIR $REPO_DIR $LOGS_DIR "$HOME/
 done
 
 info "Setting up bin..."
-mv "./update.sh" "$BIN_DIR"
+cp "./update.sh" "$BIN_DIR"
 chmod +x "$BIN_DIR/update.sh"
 
-mv "./src/Danes.java" "$BIN_DIR"
+cp "./src/Danes.java" "$BIN_DIR"
 info "Compiling Danes.java..."
 javac -d "$BIN_DIR" "$REPO_DIR/src/Danes.java" || error "Compilation failed."
 info "Compilation successful."
 rm "$BIN_DIR/Danes.java"
 
-mv "./exec.sh" "$EXEC_DEST"
+cp "./exec.sh" "$EXEC_DEST"
 chmod +x "$EXEC_DEST"
 info "Bin setup completed"
 
